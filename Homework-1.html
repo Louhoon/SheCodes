@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather</title>
+    <style>
+      body {
+        font-family: "Merriweather Sans", sans-serif;
+        margin: 0;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        width: 450px;
+      }
+
+      h1 {
+        font-size: 35px;
+        color: #1a64d6;
+        margin: 10px 0px;
+      }
+
+      li strong,
+      li span {
+        padding-left: 10px;
+      }
+
+      li {
+        margin-bottom: 5px;
+        width: 450px;
+        padding: 20px 0px;
+      }
+
+      li:hover {
+        background-color: #fffbef;
+      }
+
+      li p,
+      footer {
+        color: #7e7c76;
+      }
+
+      button {
+        font-size: 16px;
+        color: white;
+        background-color: #1a64d6;
+        border: 1px solid #1a64d6;
+        border-radius: 35px;
+        padding: 18px 25px;
+        transition: all 150ms ease-in-out;
+      }
+
+      button:hover {
+        background-color: white;
+        color: #1a64d6;
+        cursor: pointer;
+      }
+
+      footer {
+        margin-top: 25px;
+        font-size: 17px;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      .emoji {
+        font-size: 30px;
+      }
+
+      .current-degree {
+        font-size: 35px;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="emoji">⛅</div>
+      <h1>Currently 21° in Tokyo</h1>
+      <p class="current-degree">
+        13° /
+        <strong> 23° </strong>
+      </p>
+      <ul>
+        <li>
+          <h3>🌧️ Tomorrow</h3>
+          <p>
+            10°
+            <span> / </span>
+            <strong> 22° </strong>
+          </p>
+        </li>
+        <li>
+          <h3>🌤️ Saturday</h3>
+          <p>
+            15°
+            <span> / </span>
+            <strong> 17° </strong>
+          </p>
+        </li>
+        <li>
+          <h3>☀️ Sunday</h3>
+          <p>
+            25°
+            <span> / </span>
+            <strong> 28° </strong>
+          </p>
+        </li>
+      </ul>
+      <button>Change city</button>
+      <footer>
+        <p>Coded by Louane Voisin</p>
+      </footer>
+    </div>
+  </body>
+</html>
