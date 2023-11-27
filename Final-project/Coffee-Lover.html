@@ -21,15 +21,30 @@
         font-family: "Alegreya Sans SC";
       }
 
-      img {
-        display: block;
-      }
-
       a {
         text-decoration: none;
         color: white;
       }
 
+      span {
+        color: burlywood;
+      }
+
+      footer {
+        background-color: black;
+        margin: 0 auto;
+        max-width: 70%;
+        height: 260px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      footer ul {
+        margin-left: 600px;
+      }
       .container-page {
         width: 70%;
         margin: 0 auto;
@@ -39,6 +54,7 @@
         width: 100%;
         height: 500px;
         object-fit: cover;
+        display: block;
       }
 
       .overlay-1 {
@@ -103,7 +119,7 @@
         margin-right: 100px;
       }
 
-      li:hover {
+      .header-bar li:hover {
         text-decoration: underline;
         cursor: pointer;
       }
@@ -128,16 +144,16 @@
 
       .text-fav p {
         position: absolute;
-        right: 20%;
+        margin-left: 850px;
         top: 730px;
         color: black;
-        font-size: 25px;
+        font-size: 19px;
+        font-weight: lighter;
+        line-height: 0.9;
+        text-align: right;
       }
 
       .buttons {
-        position: absolute;
-        top: 90%;
-        right: 20%;
         color: white;
         cursor: pointer;
         background: rgb(101, 42, 27);
@@ -149,8 +165,80 @@
         transition: all 150ms ease-in-out;
       }
 
+      .fav-btn {
+        position: absolute;
+        top: 90%;
+        right: 20%;
+      }
+
       .buttons:hover {
         background: black;
+      }
+
+      .history-btn:hover {
+        background: white;
+        color: black;
+      }
+
+      .text-history {
+        position: absolute;
+        color: white;
+        top: 1050px;
+        text-align: left;
+        line-height: 1.2;
+        font-size: 19px;
+        margin-left: 65px;
+      }
+
+      .text-history h3 {
+        margin-bottom: 60px;
+        font-size: 48px;
+        text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.4);
+      }
+
+      .history-btn {
+        margin-top: 45px;
+        color: white;
+        cursor: pointer;
+        background: rgb(101, 42, 27);
+        padding: 30px 50px;
+        border: none;
+        border-radius: 60px;
+        box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.2);
+        font-size: 16px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .separation hr {
+        width: 70%;
+        margin: 0 auto;
+        border: 1px solid burlywood;
+        border-radius: 30px;
+      }
+
+      .contact-btn {
+        margin-left: 575px;
+        margin-top: 50px;
+        box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.2);
+      }
+
+      .contact-btn:hover {
+        background-color: white;
+        color: black;
+      }
+
+      footer .logo {
+        display: inline;
+      }
+
+      .logo img {
+        width: 70px;
+      }
+
+      .credit {
+        color: rgba(255, 255, 255, 0.5);
+        margin-left: 560px;
+        font-size: 15px;
       }
     </style>
   </head>
@@ -164,8 +252,8 @@
         <div class="overlay-1"></div>
         <ul class="header-bar">
           <li><a class="favorite" href="#fav">Favorite</a></li>
-          <li>History</li>
-          <li>Contact me</li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#contact">Contact me</a></li>
         </ul>
         <div class="text-overlay">
           <h1>☕Coffee <em>Lover</em>☕</h1>
@@ -180,17 +268,78 @@
           <h3>Cappuccino</h3>
           <p>
             A cappuccino is an espresso-based<br />
-            coffee drink that is traditionally <br />
-            prepared with steamed milk foam.
+            coffee drink that is traditionally prepared with <br />steamed milk
+            foam.
           </p>
-          <a href="https://en.wikipedia.org/wiki/Cappuccino" target="_blank"><button class="buttons">View More</button></a>
+          <a href="https://en.wikipedia.org/wiki/Cappuccino" target="_blank"
+            ><button class="buttons fav-btn">View More</button></a
+          >
         </div>
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/050/original/t%C3%A9l%C3%A9chargement_%283%29.jpg?1701021870"
           alt="coffee grain"
         />
         <div class="overlay-3"></div>
+        <div class="text-history">
+          <h3 id="history">History 📕</h3>
+          <p>
+            Coffee is a beverage prepared from roasted coffee beans.
+            <br /><span><strong>Darkly colored</strong></span
+            >, bitter, and slightly acidic,<br />
+            coffee has a stimulating effect on humans, primarily due <br />to
+            its caffeine content. It has the highest sales in the world market
+            for hot drinks.
+          </p>
+          <a href="https://en.wikipedia.org/wiki/Coffee" target="_blank"
+            ><button class="buttons history-btn">View More</button></a
+          >
+        </div>
       </div>
+      <div class="separation">
+        <hr />
+      </div>
+      <footer>
+        <button id="contact" class="buttons contact-btn">Contact Me</button>
+        <ul>
+          <li class="logo">
+            <a href="https://github.com/Louhoon" target="_blank"
+              ><img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/123/original/kisspng-computer-icons-logo-portable-network-graphics-clip-icons-for-free-iconza-circle-social-5b7fe46b4ec817.2080142615351082033227.png?1701093630"
+                alt="github logo"
+            /></a>
+          </li>
+          <li class="logo">
+            <a
+              href="https://www.linkedin.com/in/louane-voisin-anastasie42"
+              target="_blank"
+              ><img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/124/original/linkedin-social-media-icon-design-template-vector-22339992-removebg-preview.png?1701093845"
+                alt="linkedin logo"
+            /></a>
+          </li>
+        </ul>
+        <p class="credit">Code by Louane Voisin-Anastasie</p>
+      </footer>
     </div>
+    <script>
+      function contactMe() {
+        let firstName = prompt("What's your first name?");
+        let lastName = prompt("What's your last name?");
+        let email = prompt("What's you e-mail address?");
+
+        if (
+          firstName.trim() === "" ||
+          lastName.trim() === "" ||
+          email.trim() === ""
+        ) {
+          alert("⚠️ Veuillez remplir à nouveau !");
+        } else {
+          alert("Merci ! Je prendrais contact avec vous sous peu ! 😊");
+        }
+      }
+
+      let buttonContact = document.querySelector(".contact-btn");
+      buttonContact.addEventListener("click", contactMe);
+    </script>
   </body>
 </html>
